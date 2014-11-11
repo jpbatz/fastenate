@@ -1,0 +1,101 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+/*font-family: 'Oswald', sans-serif;*/
+@import url(http://fonts.googleapis.com/css?family=Lato);
+/*font-family: 'Lato', sans-serif;*/
+
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/*HEADER*/
+/*#header {*/
+    
+/*}*/
+
+.header_bar {
+    background-color: white;
+    text-align: center;
+}
+
+#nav_bar {
+    background-color: black;
+
+}
+
+#nav_items {
+    text-align: center;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    padding: 10px 0px;
+}
+
+#nav_items>li {
+    display: inline-block;
+    margin: 0px 20px;
+}
+
+/*SECTION*/
+#contents_section {
+    background-image: url('/images/bg.jpg');
+    padding-top: 40px;
+    padding-bottom: 100%;
+}
+
+/*ITEMS*/
+#items {
+    border: 1px solid orange;
+    display: block;
+    max-width: 60%;
+    margin:auto;
+}
+
+.item_image {
+    background-color: pink;
+    float:left;
+    width: 15%;
+    box-sizing: border-box;
+}
+
+.item_image>li>img {
+    height: 95px;
+    width: 150px;
+}
+
+.item_content {
+    background-color: yellow;
+    float:right;
+    width: 85%;
+    box-sizing: border-box;
+}
+
+
+.item_list {
+    border: 1px solid black;
+    padding: 0px 0px;
+    background-color: white;
+    margin: 50px 0px;
+    font-family: 'Lato', sans-serif;
+}
+
+.item_status_left {
+    border: 1px solid red;
+    font-family: 'Lato', sans-serif;
+    display: inline-block;
+    padding-right: 20px
+}
+
+.item_status {
+    border: 1px solid red;
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px
+    /*list-style-type: circle;*/
+}
+
+/*FOOTER*/
