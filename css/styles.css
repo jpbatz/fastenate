@@ -135,7 +135,7 @@ body {
 }
 
 #contents_section #items .item_content .item_image {
-    background-color: pink;
+    /*background-color: pink;*/
     display: block;
     float:left;
     width: 20%;
@@ -146,7 +146,7 @@ body {
 #contents_section #items .item_content .item_image li img {
     width: 150px;
     height: 120px;
-    background-image: url("http://placehold.it/150x120");
+    /*background-image: url("http://placehold.it/150x120");*/
 }
 
 /*when uncommented, all goes south!*/
@@ -174,8 +174,8 @@ body {
 }
 
 #contents_section #items .item_content .item_list .item_detail {
-    font-size: 16px;
-    padding-top: 16px;
+    font-size: 15px;
+    padding-top: 30px;
 }
 
 /*FOOTER*/
