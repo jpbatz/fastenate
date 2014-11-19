@@ -12,90 +12,186 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
   clear: both;
 }
 
+/*bottom is off the page*/
+body {
+     height: 100%;  
+}
 
 /*HEADER*/
-/*#header {*/
-    
-/*}*/
 
-.header_bar {
-    background-color: white;
+/*what a hot mess!!*/
+
+#header {
+    text-align: center; 
+    background-image: url("/images/header_bg.svg");
+    /*vertical-align: center;*/
+    /*position: relative;*/
+    width: 100%;
+    /*might not be a good idea*/
+    /*height: 50px;  */
+    background-repeat: no-repeat;
+    display: block;
+    /*height: 10%;*/
+}
+
+#header .header_bar {
+    display: block;
+    height: 70%;
+    background-image: url("/images/logo.svg");
+    background-repeat: no-repeat;
+}
+
+#header .header_bar #h1-logo {
+    margin: auto;
+}
+
+#header .header_bar #h1-logo span {
+    display: none;
+}
+
+/*this button moves strangely with width variations*/
+/*need to find a way to not use height and width*/
+#header .header_bar #plus_button {
+    border: 2px solid #FF0000;
+    border-radius: 5px;
+    color: red;
     text-align: center;
+    margin-top: 8px;
+    margin-right: 50px;
+    width: 1.5%;
+    height: 50%;
+    font-weight: bold;
+    position: relative;
+    float: right;
 }
 
-#nav_bar {
+#header .header_bar #plus_button a:link {
+    color: #FF0000; text-decoration: none;
+}
+
+#header .header_bar #plus_button a:active {
+    color: #FF0000; text-decoration: none;
+}
+
+#header .header_bar #plus_button a:visited {
+    color: #FF0000; text-decoration: none;
+}
+
+#header .header_bar #plus_button a:hover {
+    color: #FF0000; text-decoration: none;
+}
+
+
+/*NAVIGATION*/
+
+#header #nav_bar {
+    display: block;
+    height: 30%;
     background-color: black;
-
+    color: red;
 }
 
-#nav_items {
+#header #nav_items {
     text-align: center;
     color: white;
     font-family: 'Oswald', sans-serif;
     padding: 10px 0px;
 }
 
-#nav_items>li {
+#header #nav_items>li {
     display: inline-block;
-    margin: 0px 20px;
+    margin-right: 20px;
+    list-style-type: circle;  /*cannot get dots*/
+    opacity: 0.6;
+    font-size: 20px;
 }
 
+
+
 /*SECTION*/
+
 #contents_section {
     background-image: url('/images/bg.jpg');
-    padding-top: 40px;
-    padding-bottom: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: block;
+    /*height: 85%;*/
 }
 
 /*ITEMS*/
-#items {
-    border: 1px solid orange;
+#contents_section #items {
+    /*border: 1px solid orange;*/
     display: block;
-    max-width: 60%;
-    margin:auto;
+    max-width: 95%;
+    margin: auto;
 }
 
-.item_image {
-    background-color: pink;
-    float:left;
-    width: 15%;
-    box-sizing: border-box;
-}
-
-.item_image>li>img {
-    height: 95px;
-    width: 150px;
-}
-
-.item_content {
-    background-color: yellow;
-    float:right;
-    width: 85%;
-    box-sizing: border-box;
-}
-
-
-.item_list {
+#contents_section #items .item_content {
     border: 1px solid black;
-    padding: 0px 0px;
+    padding: 10px;
     background-color: white;
-    margin: 50px 0px;
+    margin: 10px 0px;
     font-family: 'Lato', sans-serif;
 }
 
-.item_status_left {
-    border: 1px solid red;
-    font-family: 'Lato', sans-serif;
-    display: inline-block;
-    padding-right: 20px
+#contents_section #items .item_content .item_image {
+    background-color: pink;
+    display: block;
+    float:left;
+    width: 20%;
+    box-sizing: border-box;
 }
 
-.item_status {
+
+#contents_section #items .item_content .item_image li img {
+    width: 150px;
+    height: 120px;
+    background-image: url("http://placehold.it/150x120");
+}
+
+#contents_section #items .item_content .item_list {
+    background-color: purple;
+    display: block;
+    float: right;
+    width: 80%;
+    box-sizing: border-box;
+}
+
+#contents_section #items .item_content .item_list .item_heading {
+    font-size: 30px;
+    /*font-weight: bold;*/
+}
+
+#contents_section #items .item_content .item_list .item_status {
     border: 1px solid red;
     display: inline-block;
-    padding-left: 20px;
-    padding-right: 20px
+    padding-right: 20px;
+    font-size: 20px;
+    opacity: 0.5;
     /*list-style-type: circle;*/
 }
 
+#contents_section #items .item_content .item_list .item_detail {
+    font-size: 20px;
+    padding-top: 15px;
+}
+
 /*FOOTER*/
+
+footer {  /*need to bring footer to bottom of window and add facebook and instagram icons*/
+    /*color: white;*/
+    /*opacity: 0.6;*/
+    height: 70px;  /*may need to remove*/
+    text-align: center;
+    background-color: black;
+    /*background-image: url("/images/facebook_grey.svg");*/
+    /*background-image: url("/images/instagram_grey.svg");*/
+    /*background-repeat: no-repeat;*/
+    display: block;
+    /*height: 5%;*/
+}
+
+footer img {
+    margin-top: 20px;
+    /*vertical-align: center;*/
+}

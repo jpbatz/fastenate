@@ -7,11 +7,11 @@ After forking and cloning this repository, navigate to it in your Command-Line a
 Commit often, you may create additional feature branches and use them for practice but it's not mandatory. Do commit often!
 
 ## Steps
-1. Write the Markup for the layout in index.html. A file has been provided to you with copy-text, look inside the `unformatted_text.txt` file for the text.
-1. Create an external stylesheet in the styles directory. Link to the stylesheet in your index.html
-1. Add a CSS Reset and CSS Clearfix to your styles.
-1. Import the Google fonts used in the layout: **Oswald Regular, Lato Regular**
-1. Add the viewport meta tag to the head of your markup to make sure your styles are preserved for all media sizes:
+x 1. Write the Markup for the layout in index.html. A file has been provided to you with copy-text, look inside the `unformatted_text.txt` file for the text.
+x 1. Create an external stylesheet in the styles directory. Link to the stylesheet in your index.html
+x 1. Add a CSS Reset and CSS Clearfix to your styles.
+x 1. Import the Google fonts used in the layout: **Oswald Regular, Lato Regular**
+x 1. Add the viewport meta tag to the head of your markup to make sure your styles are preserved for all media sizes:
 
   `<meta name="viewport" content="width=device-width, initial-scale=1">`
     
