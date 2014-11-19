@@ -122,7 +122,7 @@ body {
 #contents_section #items {
     /*border: 1px solid orange;*/
     display: block;
-    max-width: 95%;
+    max-width: 65%;
     margin: auto;
 }
 
@@ -149,31 +149,33 @@ body {
     background-image: url("http://placehold.it/150x120");
 }
 
-#contents_section #items .item_content .item_list {
-    background-color: purple;
-    display: block;
-    float: right;
-    width: 80%;
-    box-sizing: border-box;
-}
+/*when uncommented, all goes south!*/
+
+/*#contents_section #items .item_content .item_list {*/
+/*    background-color: purple;*/
+/*    display: block;*/
+/*    float: right;*/
+/*    width: 80%;*/
+/*    box-sizing: border-box;*/
+/*}*/
 
 #contents_section #items .item_content .item_list .item_heading {
-    font-size: 30px;
-    /*font-weight: bold;*/
+    font-size: 20px;
+    font-weight: bold;
 }
 
 #contents_section #items .item_content .item_list .item_status {
     border: 1px solid red;
     display: inline-block;
     padding-right: 20px;
-    font-size: 20px;
+    font-size: 15px;
     opacity: 0.5;
     /*list-style-type: circle;*/
 }
 
 #contents_section #items .item_content .item_list .item_detail {
-    font-size: 20px;
-    padding-top: 15px;
+    font-size: 16px;
+    padding-top: 16px;
 }
 
 /*FOOTER*/
