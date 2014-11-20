@@ -133,28 +133,26 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 #contents_section #items .item_content .item_image {
     /*background-color: pink;*/
-    display: inline-block;
+    display: block;
     float:left;
     width: 20%;
     box-sizing: border-box;
 }
 
 /*cannot get images to work from here, they disappear, so had to do img in html markup*/
-#contents_section #items .item_content .item_image li img {
+/*#contents_section #items .item_content .item_image img {*/
 /*    width: 150px;
     height: 120px;*/
     /*background-image: url("http://placehold.it/150x120");*/
-}
-
-/* when uncommented, all goes south! */
+/*}*/
 
 #contents_section #items .item_content .item_list {
     /*background-color: purple;*/
-/*    display: inline-block;
-    float: right;*/
-    width: auto;
+    display: block;
+    float: right;
+    width: 80%;
     opacity: 0.6;
-    /*box-sizing: border-box;*/
+    box-sizing: border-box;
 }
 
 #contents_section #items .item_content .item_list .item_heading {
