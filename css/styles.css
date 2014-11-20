@@ -164,13 +164,16 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 #contents_section #items .item_content .item_list .item_status {
     /*border: 1px solid red;*/
-    display: inline-block;
+    display: inline;
     /*width: auto;*/
-    padding-right: 20px;
     font-size: 15px;
     opacity: 0.5;
-     /*don't know how to get the circles back, this does not work */
-    /*list-style-type: circle;*/
+}
+
+#contents_section #items .item_content .item_list .middot {
+    display: inline;
+    font-size: 20px;
+    opacity: 0.5;
 }
 
 #contents_section #items .item_content .item_list .item_detail {
@@ -184,10 +187,6 @@ footer {  /*cannot get images to work from here, they disappear, so had to do im
     opacity: 0.8;
     text-align: center;
     background-color: black;
-    /*background-image: url("/images/facebook_grey.svg");*/
-    /*background-image: url("/images/instagram_grey.svg");*/
-    /*background-repeat: no-repeat;*/
-    /*display: block;*/
 }
 
 footer img {
