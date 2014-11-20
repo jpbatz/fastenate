@@ -99,11 +99,30 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     display: inline-block;
     margin-right: 30px;
     font-family: 'Oswald', sans-serif;
-    color: white;
     font-size: 14px;
 }
 
 #header #nav_bar #nav_items li a {
+    text-decoration: none;
+}
+
+#header #nav_bar #nav_items li a:link {
+    color: gray; 
+    text-decoration: none;
+}
+
+#header #nav_bar #nav_items li a:active {
+    /*color: #FF0000; */
+    text-decoration: none;
+}
+
+#header #nav_bar #nav_items li a:visited {
+    color: gray; 
+    text-decoration: none;
+}
+
+#header #nav_bar #nav_items li a:hover {
+    /*color: #FF0000; */
     text-decoration: none;
 }
 
