@@ -148,12 +148,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     padding: 10px;
     background-color: white;
     margin: 10px 0px;
-    /*margin: auto;*/
     font-family: 'Lato', sans-serif;
-/*    display: block;
-    float: left;
-    box-sizing: border-box;
-    width: 20%;*/
 }
 
 #contents_section #items .item_content .item_image {
