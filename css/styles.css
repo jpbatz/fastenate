@@ -13,9 +13,12 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 }
 
 /* is the vertical height of the page correct and adjusting correctly? */
-body {
-    height: 100%;  
-}
+/*Don't use height, but there is white space under footer bar.  should window adjust to size? */
+
+/*body {*/
+/*    height: 100%;  */
+/*}*/
+
 
 /*HEADER*/
 
@@ -23,14 +26,13 @@ body {
 
 #header {
     text-align: center; 
-    
     /*vertical-align: center;*/
     /*position: relative;*/
-    /*width: 100%;*/
+    width: 100%;
     /*might not be a good idea*/
     /*height: 50px;  */
-    
-    /*display: block;*/
+/*display: block;*/
+/*background-repeat: no-repeat;*/
     /*height: 10%;*/
     /*margin: auto;*/
 }
@@ -40,52 +42,95 @@ body {
     text-align: center; 
     background-image: url("/images/header_bg.svg");
     background-repeat: no-repeat;
-    max-width: 430px;
-    margin-top: 10px;
+    background-position: center;
+    display: block;
+/*max-width: 430px;*/
+/*margin-top: 10px;*/
     /*margin-bottom: 20px;*/
-    margin-left: 130px;
+/*margin-left: 130px;*/
     /*padding-bottom: 50px;*/
     /*height: 60%;*/
     /*display: block;  */
+
+
+    /* Marifel: Set the actual logo as an img element in the HTML */
+    /*background-image: url("/images/logo.svg");*/
+
+    /*J: Kelli recommeded h1 span method, but i could not get it to work*/
+    
 }
 
 #header #header_bar #h1_logo {
-    text-align: center;
-    max-width: 90px;
-    background-image: url("/images/logo.svg");
-    background-repeat: no-repeat;
-    border: 5px solid red;
-    vertical-align: middle;
-    margin-left: 140px;
-    padding-bottom: 20px;
-    padding-left: 50px;
+
+    /*see html*/
+    /*background-image: url("/images/logo.svg");*/
+    margin: auto;
+    
+    /*J: Attempt at Kelli's suggestion*/
+    
+    /*text-align: center;*/
+    /*max-width: 90px;*/
+    /*background-repeat: no-repeat;*/
+    /*border: 5px solid red;*/
+    /*vertical-align: middle;*/
+    /*margin-left: 140px;*/
+    /*padding-bottom: 20px;*/
+    /*padding-left: 50px;*/
 }
 
 #header #header_bar #h1_logo span {
-    border: 2px solid red;
-    visibility: hidden;
-    font-size: 30px;
+    /*border: 2px solid red;*/
+    
+    /*J: Attempt at Kelli's suggestion*/
+    /*visibility: hidden;*/
+    /*visibility: visible;*/
+    /*font-size: 30px;*/
+    
+    /*Marifel recommends:*/
+    display: none;
 
 }
 
 /* unable to place to the right with proper vertical alignment */
 /* need to find a way to not use height and width */
 #header #header_bar #plus_button {
-    border: 2px solid #FF0000;
-    border-radius: 2px;
-    color: red;
+    /*See Marifel's, below*/
+    /*border: 2px solid #FF0000;*/
+    /*border-radius: 2px;*/
+    /*color: red;*/
     /*text-align: right;*/
-    margin-top: 0px;
+    /*margin-top: 0px;*/
     /*margin-right: 5px;*/
-    width: 8%;
+    /*width: 8%;*/
     /*height: 190%;*/
-    font-weight: bold;
-    position: relative;
+    /*font-weight: bold;*/
+    /*position: relative;*/
     /*float: right;*/
-display: inline-block;
-margin-left: 500px;
-padding: 5px 0px;
+    /*display: inline-block;*/
+    /*margin-left: 500px;*/
+    /*padding: 5px 0px;*/
+    
+    
+    /*J: This tolerates horizontal resizing of window*/
+    
+    /*Marifel's'*/
+    border: 2px solid #FF0000;
+    color: red;
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    float: none; /* No need to set to none if you remove float: right from above */
+    top: 16px;
+    right: 16px;
+    font-size: 32px;
+    text-decoration: none;
+    line-height: 22px;
+    /* M: Now you just need to set the right border and color */
+    
 }
+
+
+/*The following maintains the button color through hover and clicks*/
 
 #header #header_bar #plus_button a:link {
     color: #FF0000; text-decoration: none;
@@ -220,4 +265,17 @@ footer {  /*cannot get images to work from here, they disappear, so had to do im
 
 footer img {
     margin: 10px 0px;
+}
+
+
+/*MEDIA QUERIES*/
+
+/* MOBILE ONLY */
+@media only screen and (max-width: 480px){
+}
+/* TABLET ONLY */
+@media only screen and (min-width: 481px) and (max-width: 768px){
+}
+/* DESKTOP ONLY */
+@media only screen and (min-width: 769px){
 }
