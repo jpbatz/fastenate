@@ -12,83 +12,90 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
   clear: both;
 }
 
+    /*HEADER*/
 
-/*HEADER*/
+    #header {
+        text-align: center;
+        background-color: white;
+        position: fixed;
+        top: 0px;
+        width: 100%;
+    }
 
-#header {
-    text-align: center;
-    background-color: white;
-    position: fixed;
-    top: 0px;
-    width: 100%;
-}
+    #header #header_bar {
+        /*border: 1px solid blue;*/
+        background-repeat: no-repeat;
+        background-position: center;
+        display: block;
+        margin: auto;
+    }
 
-#header #header_bar {
-    /*border: 1px solid blue;*/
-    background-image: url("/images/header_bg.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    display: block;
-    margin: auto;
-}
+    #header #header_bar #plus_button {
+        /*border: 2px solid #FF0000;*/
+        border: 2px solid #FF0000;
+        color: red;
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        font-size: 32px;
+        text-decoration: none;
+        line-height: 22px;
+        border-radius: 4px;
+    }
 
-#header #header_bar #h1_logo {
-    /*background-image: url("/images/logo.svg");*/
-}
+    /*NAVIGATION*/
 
-/*#header #header_bar #h1_logo span {*/
-    /*border: 2px solid red;*/
-/*    visible: hidden;
-}*/
+    #header #nav_bar {
+        display: block;
+        opacity: 0.8;
+        background-color: black;
+        position: fixed;
+        width: 100%;
+    }
 
-#header #header_bar #plus_button {
-    /*border: 2px solid #FF0000;*/
-    border: 2px solid #FF0000;
-    color: red;
-    width: 26px;
-    height: 26px;
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    font-size: 32px;
-    text-decoration: none;
-    line-height: 22px;
-    border-radius: 4px;
-}
+    /*The following maintains the button color through hover and clicks*/
 
+    #header #header_bar #plus_button a:link {
+        /*color: #FF0000; */
+        text-decoration: none;
+    }
 
-/*The following maintains the button color through hover and clicks*/
+    #header #header_bar #plus_button a:active {
+        /*color: #FF0000; */
+        text-decoration: none;
+    }
 
-#header #header_bar #plus_button a:link {
-    /*color: #FF0000; */
-    text-decoration: none;
-}
+    #header #header_bar #plus_button a:visited {
+        /*color: #FF0000; */
+        text-decoration: none;
+    }
 
-#header #header_bar #plus_button a:active {
-    /*color: #FF0000; */
-    text-decoration: none;
-}
+    #header #header_bar #plus_button a:hover {
+        /*color: #FF0000; */
+        text-decoration: none;
+    }
 
-#header #header_bar #plus_button a:visited {
-    /*color: #FF0000; */
-    text-decoration: none;
-}
+    /*SECTION*/
 
-#header #header_bar #plus_button a:hover {
-    /*color: #FF0000; */
-    text-decoration: none;
-}
+    #contents_section {
+        background-image: url('/images/bg.jpg');
+        margin-top: 100px;
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
 
 
 /*NAVIGATION*/
 
-#header #nav_bar {
+/*#header #nav_bar {
     display: block;
     opacity: 0.8;
     background-color: black;
     position: fixed;
     width: 100%;
-}
+}*/
 
 #header #nav_bar #nav_items {
     padding: 10px 0px;
@@ -128,12 +135,12 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 /*SECTION*/
 
-#contents_section {
+/*#contents_section {
     background-image: url('/images/bg.jpg');
     margin-top: 100px;
     padding-top: 30px;
     padding-bottom: 50px;
-}
+}*/
 
 /*Content Items*/
 
@@ -212,19 +219,55 @@ footer img {
     margin: 10px 0px;
 }
 
-
 /*MEDIA QUERIES*/
 
-/*may combine tablets and desktop*/
 
 /* MOBILE ONLY */
 @media only screen and (max-width: 480px){
+
+    /*HEADER*/
+
+    #header #header_bar {
+        text-align: left;
+    }
+
+    #header #header_bar #plus_button {
+        /*border: 2px solid #FF0000;*/
+        text-align: center;
+    }
+
+    /*NAVIGATION*/
+
+    #header #nav_bar {
+        text-align: center;
+    }
+
+
+    /*SECTION*/
+
+    #contents_section {
+        /*border: 5px solid white;*/
+        padding-top: 10px;
+    }
+
 }
 
-/* TABLET ONLY */
-@media only screen and (min-width: 481px) and (max-width: 768px){
+/* TABLET AND DESKTOP */
+@media only screen and (min-width: 481px) {
+
+    /*HEADER*/
+
+    #header #header_bar {
+        /*border: 1px solid blue;*/
+        background-image: url("/images/header_bg.svg");
+    }
+
+
+    /*NAVIGATION*/
+
+
+    /*SECTION*/
+
+
 }
 
-/* DESKTOP ONLY */
-@media only screen and (min-width: 769px){
-}
