@@ -85,7 +85,6 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     padding: 10px 0px;
 }
 
-/*bg.jpg color instead of white text*/
 #header #nav_bar #nav_items li {
     display: inline-block;
     margin-right: 30px;
@@ -108,7 +107,6 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 }
 
 #header #nav_bar #nav_items li a:active {
-    /*color: #FF0000; */
     text-decoration: none;
 }
 
@@ -118,11 +116,10 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 }
 
 #header #nav_bar #nav_items li a:hover {
-    /*color: #FF0000; */
     text-decoration: none;
 }
 
-    /*SECTION*/
+/*SECTION*/
 
 #contents_section {
     background-image: url('/images/bg.jpg');
@@ -144,7 +141,6 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     padding: 10px;
     background-color: white;
     margin: 10px 0px;
-    /*font-family: 'Lato', sans-serif;*/
 }
 
 #contents_section #items .item_content .item_image {
@@ -172,13 +168,11 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 #contents_section #items .item_content .item_list .item_heading {
     font-size: 13px;
-    /*font-weight: bold;*/
 }
 
 #contents_section #items .item_content .item_list .item_status {
     /*border: 1px solid red;*/
     display: inline;
-    /*width: auto;*/
     font-size: 10px;
     opacity: 0.5;
 }
@@ -186,7 +180,6 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 #contents_section #items .item_content .item_list .item_status_last {
     /*border: 1px solid red;*/
     display: inline;
-    /*width: auto;*/
     font-size: 10px;
     opacity: 0.5;
 }
@@ -208,64 +201,8 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     padding-top: 15px;
 }
 
-/*FOOTER*/
 
-footer {  /*cannot get images to work from here, they disappear, so had to do img in html markup */
-    text-align: center;
-    background-color: #2C2C2E;
-    position: fixed;
-    bottom: 0px;
-    width: 100%;
-    /*padding: 4px;*/
-}
-
-footer img {
-    margin: 10px 0px;
-}
-
-footer #facebook_icon {
-    /*background-color: white;*/
-    display: inline-block;
-    width: 18px;
-    float: center;
-    position: relative;
-    background-image: url('/images/facebook_grey.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 5px;
-}
-
-footer #instagram_icon {
-    /*background-color: yellow;*/
-    display: inline-block;
-    width: 18px;
-    float: center;
-    position: relative;
-    background-image: url('/images/instagram_grey.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 5px;
-}
-
-footer #facebook_icon span {
-    visibility: hidden;
-}
-
-footer #instagram_icon span {
-    visibility: hidden;
-}
-
-footer #facebook_icon:hover {
-    background-image: url('/images/facebook_orange.svg');
-}
-
-footer #instagram_icon:hover {
-    background-image: url('/images/instagram_orange.svg');
-}
-
-
-/*MEDIA QUERIES*/
-
+                        /*MEDIA QUERIES*/
 
 /* MOBILE ONLY */
 @media only screen and (max-width: 480px){
@@ -337,10 +274,6 @@ footer #instagram_icon:hover {
         display: none;
     }
 
-    footer {  /*cannot get images to work from here, they disappear, so had to do img in html markup */
-        display: none;
-    }
-
 }
 
 /* TABLET */
@@ -367,9 +300,6 @@ footer #instagram_icon:hover {
         max-width: 95%;
     }
 
-    footer {  /*cannot get images to work from here, they disappear, so had to do img in html markup */
-        display: none;
-    }
 
 }
 
@@ -397,5 +327,58 @@ footer #instagram_icon:hover {
         /*need to change font-color to background color for item_heading*/
     }
 
+    /*FOOTER*/
+
+    footer {
+        background-color: #2C2C2E;
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+        text-align: center;
+    }
+
+    footer img {
+        margin: 10px 0px;
+    }
+
+    footer #facebook_icon {
+        /*background-color: white;*/
+        display: inline-block;
+        width: 18px;
+        float: center;
+        position: relative;
+        background-image: url('/images/facebook_grey.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 5px;
+    }
+
+    footer #instagram_icon {
+        /*background-color: yellow;*/
+        display: inline-block;
+        width: 18px;
+        float: center;
+        position: relative;
+        background-image: url('/images/instagram_grey.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 5px;
+    }
+
+    footer #facebook_icon span {
+        visibility: hidden;
+    }
+
+    footer #instagram_icon span {
+        visibility: hidden;
+    }
+
+    footer #facebook_icon:hover {
+        background-image: url('/images/facebook_orange.svg');
+    }
+
+    footer #instagram_icon:hover {
+        background-image: url('/images/instagram_orange.svg');
+    }
 }
 
