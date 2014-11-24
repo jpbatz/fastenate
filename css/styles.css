@@ -17,15 +17,10 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     #header {
         text-align: center;
         background-color: white;
-        position: fixed;
-        top: 0px;
         width: 100%;
     }
 
     #header #header_bar {
-        /*border: 1px solid blue;*/
-        background-repeat: no-repeat;
-        background-position: center;
         display: block;
         margin: auto;
     }
@@ -33,15 +28,15 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     #header #header_bar #plus_button {
         /*border: 2px solid #FF0000;*/
         border: 1px solid orange;
-        color: #993C26;
-        width: 26px;
-        height: 26px;
+        color: #913A20;
+        width: 20px;
+        height: 20px;
         position: absolute;
         top: 16px;
         right: 16px;
-        font-size: 32px;
+        font-size: 28px;
         text-decoration: none;
-        line-height: 22px;
+        line-height: 16px;
     }
 
     /*NAVIGATION*/
@@ -50,7 +45,6 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
         display: block;
         opacity: 0.8;
         background-color: black;
-        position: fixed;
         width: 100%;
     }
 
@@ -76,15 +70,6 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
         text-decoration: none;
     }
 
-    /*SECTION*/
-
-    #contents_section {
-        background-image: url('/images/bg.jpg');
-        margin-top: 100px;
-        padding-top: 30px;
-        padding-bottom: 50px;
-    }
-
 
 /*NAVIGATION*/
 
@@ -106,6 +91,11 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     margin-right: 30px;
     font-family: 'Oswald', sans-serif;
     font-size: 14px;
+}
+
+#header #nav_bar #nav_items .middot {
+    color: #6E6F72;
+    font-size: 20px;
 }
 
 #header #nav_bar #nav_items li a {
@@ -132,14 +122,14 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     text-decoration: none;
 }
 
-/*SECTION*/
+    /*SECTION*/
 
-/*#contents_section {
+#contents_section {
     background-image: url('/images/bg.jpg');
-    margin-top: 100px;
-    padding-top: 30px;
+    margin-top: 0px;
+    padding-top: 10px;
     padding-bottom: 50px;
-}*/
+}
 
 /*Content Items*/
 
@@ -154,7 +144,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     padding: 10px;
     background-color: white;
     margin: 10px 0px;
-    font-family: 'Lato', sans-serif;
+    /*font-family: 'Lato', sans-serif;*/
 }
 
 #contents_section #items .item_content .item_image {
@@ -171,6 +161,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 #contents_section #items .item_content .item_list {
     /*background-color: purple;*/
+    font-family: 'Lato', sans-serif;
     padding-left: 5px;
     display: block;
     float: right;
@@ -180,11 +171,19 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 }
 
 #contents_section #items .item_content .item_list .item_heading {
-    font-size: 15px;
-    font-weight: bold;
+    font-size: 13px;
+    /*font-weight: bold;*/
 }
 
 #contents_section #items .item_content .item_list .item_status {
+    /*border: 1px solid red;*/
+    display: inline;
+    /*width: auto;*/
+    font-size: 10px;
+    opacity: 0.5;
+}
+
+#contents_section #items .item_content .item_list .item_status_last {
     /*border: 1px solid red;*/
     display: inline;
     /*width: auto;*/
@@ -198,6 +197,12 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     opacity: 0.5;
 }
 
+#contents_section #items .item_content .item_list .middot_last {
+    display: inline;
+    font-size: 20px;
+    opacity: 0.5;
+}
+
 #contents_section #items .item_content .item_list .item_detail {
     font-size: 10px;
     padding-top: 15px;
@@ -206,17 +211,58 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 /*FOOTER*/
 
 footer {  /*cannot get images to work from here, they disappear, so had to do img in html markup */
-    opacity: 0.8;
     text-align: center;
-    background-color: black;
+    background-color: #2C2C2E;
     position: fixed;
     bottom: 0px;
     width: 100%;
+    /*padding: 4px;*/
 }
 
 footer img {
     margin: 10px 0px;
 }
+
+footer #facebook_icon {
+    /*background-color: white;*/
+    display: inline-block;
+    width: 18px;
+    float: center;
+    position: relative;
+    background-image: url('/images/facebook_grey.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 5px;
+}
+
+footer #instagram_icon {
+    /*background-color: yellow;*/
+    display: inline-block;
+    width: 18px;
+    float: center;
+    position: relative;
+    background-image: url('/images/instagram_grey.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 5px;
+}
+
+footer #facebook_icon span {
+    visibility: hidden;
+}
+
+footer #instagram_icon span {
+    visibility: hidden;
+}
+
+footer #facebook_icon:hover {
+    background-image: url('/images/facebook_orange.svg');
+}
+
+footer #instagram_icon:hover {
+    background-image: url('/images/instagram_orange.svg');
+}
+
 
 /*MEDIA QUERIES*/
 
@@ -228,6 +274,7 @@ footer img {
 
     #header #header_bar {
         text-align: left;
+        /*visibility: hidden;*/
     }
 
     #header #header_bar #plus_button {
@@ -241,39 +288,114 @@ footer img {
         text-align: center;
     }
 
+    #header #nav_bar #nav_items {
+        /*margin: 0px;*/
+    }
+
+    #header #nav_bar #nav_items li {
+        /*border: 1px solid white;*/
+        margin: 5px;
+        font-size: 12px;
+        vertical-align: middle;
+    }
+
+    #header #nav_bar #nav_items li a {
+        /*background-color: yellow;*/
+
+        /*need to make vertical line*/
+        /*should be 3 div's inline-block, margin:0px?;*/
+
+    }
+
+    #header #nav_bar #nav_items .middot {
+        visibility: hidden;
+        /* &#8402; is a vertical line */
+    }
+
 
     /*SECTION*/
 
     #contents_section {
         /*border: 5px solid white;*/
-        padding-top: 10px;
+        padding-top: 1px;
+        margin-top: 0px;
     }
 
     #contents_section #items {
-        max-width: 90%;
+        max-width: 95%;
+    }
+
+    #contents_section #items .item_content .item_list .middot_last {
+        display: none;
+    }
+
+    #contents_section #items .item_content .item_list .item_status_last {
+        display: none;
     }
 
     #contents_section #items .item_content .item_list .item_detail {
         display: none;
     }
+
+    footer {  /*cannot get images to work from here, they disappear, so had to do img in html markup */
+        display: none;
+    }
+
 }
 
-/* TABLET AND DESKTOP */
-@media only screen and (min-width: 481px) {
+/* TABLET */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+    /*HEADER*/
+
+    #header #header_bar {
+        border: 1px solid blue;
+        background-image: url("/images/header_bg.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    /*SECTION*/
+
+    #contents_section {
+        /*border: 5px solid white;*/
+        padding-top: 1px;
+        margin-top: 0px;
+    }
+
+    #contents_section #items {
+        max-width: 95%;
+    }
+
+    footer {  /*cannot get images to work from here, they disappear, so had to do img in html markup */
+        display: none;
+    }
+
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 769px){
 
     /*HEADER*/
 
     #header #header_bar {
         /*border: 1px solid blue;*/
         background-image: url("/images/header_bg.svg");
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
 
     /*NAVIGATION*/
-
+    #header #nav_bar #nav_items li a:hover {
+        color: #913A1F;
+    }
 
     /*SECTION*/
-
+    #contents_section #items .item_content:hover {
+        border: 3px solid orange;
+        /*need to change font-color to background color for item_heading*/
+    }
 
 }
 
