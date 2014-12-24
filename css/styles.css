@@ -274,6 +274,10 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
         display: none;
     }
 
+    footer {
+        display: none;
+    }
+
 }
 
 /* TABLET */
@@ -298,6 +302,10 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
     #contents_section #items {
         max-width: 95%;
+    }
+
+    footer {
+        display: none;
     }
 
 
