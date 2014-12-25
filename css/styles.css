@@ -225,9 +225,9 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
         text-align: center;
     }
 
-    #header #nav_bar #nav_items {
+    /*#header #nav_bar #nav_items {*/
         /*margin: 0px;*/
-    }
+    /*}*/
 
     #header #nav_bar #nav_items li {
         /*border: 1px solid white;*/
@@ -236,13 +236,13 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
         vertical-align: middle;
     }
 
-    #header #nav_bar #nav_items li a {
+    /*#header #nav_bar #nav_items li a {*/
         /*background-color: yellow;*/
 
         /*need to make vertical line*/
         /*should be 3 div's inline-block, margin:0px?;*/
 
-    }
+    /*}*/
 
     #header #nav_bar #nav_items .middot {
         visibility: hidden;
@@ -274,6 +274,9 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
         display: none;
     }
 
+    footer {
+        display: none;
+    }
 }
 
 /* TABLET */
@@ -298,6 +301,10 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
     #contents_section #items {
         max-width: 95%;
+    }
+    
+    footer {
+        display: none;
     }
 
 
