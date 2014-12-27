@@ -12,6 +12,10 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
   clear: both;
 }
 
+html {
+    font-family: 'Oswald', sans-serif;
+    background-image: url('/images/bg.jpg');
+}
     /*HEADER*/
 
     #header {
@@ -88,7 +92,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 #header #nav_bar #nav_items li {
     display: inline-block;
     margin-right: 30px;
-    font-family: 'Oswald', sans-serif;
+    /*font-family: 'Oswald', sans-serif;*/
     font-size: 14px;
 }
 
@@ -122,7 +126,6 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 /*SECTION*/
 
 #contents_section {
-    background-image: url('/images/bg.jpg');
     margin-top: 0px;
     padding-top: 10px;
     padding-bottom: 50px;
@@ -157,7 +160,6 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 #contents_section #items .item_content .item_list {
     /*background-color: purple;*/
-    font-family: 'Lato', sans-serif;
     padding-left: 5px;
     display: block;
     float: right;
@@ -286,7 +288,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     /*HEADER*/
 
     #header #header_bar {
-        border: 1px solid blue;
+        /*border: 1px solid blue;*/
         background-image: url("/images/header_bg.svg");
         background-repeat: no-repeat;
         background-position: center;
