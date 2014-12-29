@@ -12,6 +12,9 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
   clear: both;
 }
 
+body {
+    background-image: url('/images/bg.jpg');
+}
     /*HEADER*/
 
     #header {
@@ -122,7 +125,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 /*SECTION*/
 
 #contents_section {
-    background-image: url('/images/bg.jpg');
+    /*background-image: url('/images/bg.jpg');*/
     margin-top: 0px;
     padding-top: 10px;
     padding-bottom: 50px;
