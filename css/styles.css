@@ -12,7 +12,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
   clear: both;
 }
 
-html {
+body {
     background-image: url('/images/bg.jpg');
 }
 
@@ -86,10 +86,11 @@ html {
     /*background-color: yellow;*/
     display: inline-block;
     margin-right: 5px;
-    padding-bottom: 4px;
+    vertical-align: middle;
     font-family: 'Oswald', sans-serif;
     font-size: 17px;
 }
+        
 
 #header #nav_bar #nav_items .middot {
     /*background-color: orange;*/
@@ -118,12 +119,14 @@ html {
 
 #header #nav_bar #nav_items li a:hover {
     text-decoration: none;
+    color: #913A1F;
 }
 
 
 /*SECTION*/
 
 #contents_section {
+    /*border: 1px solid yellow;*/
     margin-top: 0px;
     padding-top: 10px;
     padding-bottom: 50px;
@@ -134,7 +137,6 @@ html {
 #contents_section #items {
     /*border: 1px solid yellow;*/
     max-width: 51%;
-    /*display: block;*/
     margin: auto;
     margin-top: 24px;
 }
@@ -144,6 +146,11 @@ html {
     padding: 10px;
     background-color: white;
     margin: 10px 0px;
+}
+
+#contents_section #items .item_content:hover {
+    border: 4px solid orange;
+    /*need to change font-color to background color for item_heading*/
 }
 
 #contents_section #items .item_content .item_image {
@@ -173,6 +180,11 @@ html {
 #contents_section #items .item_content .item_list .item_heading {
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
+}
+
+/*this needs to be in the hover for the item content*/
+#contents_section #items .item_content .item_list .item_heading:hover {
+    color: #913A1F;
 }
 
 #contents_section #items .item_content .item_list .item_status {
@@ -233,24 +245,38 @@ html {
         text-align: center;
     }
 
-    /*#header #nav_bar #nav_items {*/
-        /*margin: 0px;*/
-    /*}*/
-
-    #header #nav_bar #nav_items li {
-        /*border: 1px solid white;*/
-        margin: 5px;
-        font-size: 12px;
-        vertical-align: middle;
+    #header #nav_bar #nav_items {
+        margin: 0px 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
     }
 
-    /*#header #nav_bar #nav_items li a {*/
+    #header #nav_bar #nav_items li {
         /*background-color: yellow;*/
+        margin-right: 0px;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: inline-block;
+        border-right: 1px solid white;
+    }
+
+    #header #nav_bar #nav_items #last {
+        /*background-color: yellow;*/
+        border-right: 1px solid black;
+    }
+
+    #header #nav_bar #nav_items .middot {
+        display: none;
+    }
+
+    #header #nav_bar #nav_items li a {
 
         /*need to make vertical line*/
         /*should be 3 div's inline-block, margin:0px?;*/
 
-    /*}*/
+    }
 
     #header #nav_bar #nav_items .middot {
         visibility: hidden;
@@ -268,6 +294,7 @@ html {
 
     #contents_section #items {
         max-width: 95%;
+        margin-top: 5px;
     }
 
     #contents_section #items .item_content .item_list .middot_last {
@@ -309,7 +336,9 @@ html {
     }
 
     #contents_section #items {
+        /*border: 5px solid white;*/
         max-width: 95%;
+        margin: 5px auto;
     }
     
     footer {
@@ -337,15 +366,10 @@ html {
 
 
     /*NAVIGATION*/
-    #header #nav_bar #nav_items li a:hover {
-        color: #913A1F;
-    }
+
 
     /*SECTION*/
-    #contents_section #items .item_content:hover {
-        border: 3px solid orange;
-        /*need to change font-color to background color for item_heading*/
-    }
+
 
     /*FOOTER*/
 
