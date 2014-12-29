@@ -271,18 +271,6 @@ body {
         display: none;
     }
 
-    #header #nav_bar #nav_items li a {
-
-        /*need to make vertical line*/
-        /*should be 3 div's inline-block, margin:0px?;*/
-
-    }
-
-    #header #nav_bar #nav_items .middot {
-        visibility: hidden;
-        /* &#8402; is a vertical line */
-    }
-
 
     /*SECTION*/
 
@@ -337,7 +325,7 @@ body {
 
     #contents_section #items {
         /*border: 5px solid white;*/
-        max-width: 95%;
+        max-width: 96%;
         margin: 5px auto;
     }
     
