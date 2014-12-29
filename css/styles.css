@@ -13,77 +13,70 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 }
 
 html {
-    font-family: 'Oswald', sans-serif;
     background-image: url('/images/bg.jpg');
 }
-    /*HEADER*/
 
-    #header {
-        text-align: center;
-        background-color: white;
-        width: 100%;
-    }
 
-    #header #header_bar {
-        display: block;
-        margin: auto;
-    }
+/*HEADER*/
 
-    #header #header_bar #plus_button {  /* need to get colors closer to mockup */
-        /*background-color: yellow;*/
-        font-family: 'Lato', sans-serif;
-        border: 2px solid #FF0000;
-        color: #913A20;
-        width: 28px;
-        height: 28px;
-        position: absolute;
-        top: 15px;
-        right: 15px;
-        font-weight: normal;
-        font-size: 38px;
-        text-decoration: none;
-        line-height: 25px;
-    }
+#header {
+    text-align: center;
+    background-color: white;
+    width: 100%;
+}
 
-    /*The following maintains the button color through hover and clicks*/
+#header #header_bar {
+    display: block;
+    margin: auto;
+}
 
-    #header #header_bar #plus_button a:link {
-        /*color: #FF0000; */
-        text-decoration: none;
-    }
+#header #header_bar #plus_button {  /* need to get colors closer to mockup */
+    /*background-color: yellow;*/
+    font-family: 'Lato', sans-serif;
+    border: 2px solid #FF0000;
+    color: #913A20;
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-weight: normal;
+    font-size: 38px;
+    text-decoration: none;
+    line-height: 25px;
+}
 
-    #header #header_bar #plus_button a:active {
-        /*color: #FF0000; */
-        text-decoration: none;
-    }
+/*The following maintains the button color through hover and clicks*/
 
-    #header #header_bar #plus_button a:visited {
-        /*color: #FF0000; */
-        text-decoration: none;
-    }
+#header #header_bar #plus_button a:link {
+    /*color: #FF0000; */
+    text-decoration: none;
+}
 
-    #header #header_bar #plus_button a:hover {
-        /*color: #FF0000; */
-        text-decoration: none;
-    }
+#header #header_bar #plus_button a:active {
+    /*color: #FF0000; */
+    text-decoration: none;
+}
+
+#header #header_bar #plus_button a:visited {
+    /*color: #FF0000; */
+    text-decoration: none;
+}
+
+#header #header_bar #plus_button a:hover {
+    /*color: #FF0000; */
+    text-decoration: none;
+}
 
 
 /*NAVIGATION*/
 
-/*#header #nav_bar {
+#header #nav_bar {
     display: block;
     opacity: 0.8;
     background-color: black;
-    position: fixed;
     width: 100%;
-}*/
-
-    #header #nav_bar {
-        display: block;
-        opacity: 0.8;
-        background-color: black;
-        width: 100%;
-    }
+}
 
 #header #nav_bar #nav_items {
     padding: 10px 0px;
@@ -93,14 +86,15 @@ html {
     /*background-color: yellow;*/
     display: inline-block;
     margin-right: 5px;
-    padding-bottom: 4px;  /* margin and padding bottom makes bar taller - how do i vertical center text? */
-    font-size: 18px;
+    padding-bottom: 4px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
 }
 
 #header #nav_bar #nav_items .middot {
     /*background-color: orange;*/
     color: #6E6F72;
-    font-size: 25px;  /* increasing makes little bigger, but goes up, looks square */
+    font-size: 25px;  /* need biggert dot, looks square */
     font-weight: bolder;
 }
 
@@ -126,6 +120,7 @@ html {
     text-decoration: none;
 }
 
+
 /*SECTION*/
 
 #contents_section {
@@ -137,13 +132,15 @@ html {
 /*Content Items*/
 
 #contents_section #items {
-    max-width: 60%;
-    display: block;
+    /*border: 1px solid yellow;*/
+    max-width: 51%;
+    /*display: block;*/
     margin: auto;
+    margin-top: 24px;
 }
 
 #contents_section #items .item_content {
-    /*border: 1px solid black;*/
+    /*border: 1px solid green;*/
     padding: 10px;
     background-color: white;
     margin: 10px 0px;
@@ -151,42 +148,47 @@ html {
 
 #contents_section #items .item_content .item_image {
     /*background-color: pink;*/
-    display: block;
+    display: inline-block;
     float:left;
-    width: 25%;
+    width: 28%;
     box-sizing: border-box;
 }
 
 #contents_section #items .item_content .item_image img {
     max-width: 100%;  /*keeps text from overlapping image when reducing window size*/
+    margin: 2px;
 }
 
 #contents_section #items .item_content .item_list {
     /*background-color: purple;*/
-    padding-left: 5px;
-    display: block;
+    padding-top: 8px;
+    padding-left: 15px;
+    display: inline-block;
     float: right;
-    width: 75%;
+    width: 72%;
     opacity: 0.8;
     box-sizing: border-box;
 }
 
 #contents_section #items .item_content .item_list .item_heading {
-    font-size: 13px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
 }
 
 #contents_section #items .item_content .item_list .item_status {
     /*border: 1px solid red;*/
     display: inline;
-    font-size: 10px;
-    opacity: 0.5;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    opacity: 0.6;
 }
 
 #contents_section #items .item_content .item_list .item_status_last {
     /*border: 1px solid red;*/
     display: inline;
-    font-size: 10px;
-    opacity: 0.5;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    opacity: 0.6;
 }
 
 #contents_section #items .item_content .item_list .middot {
@@ -202,8 +204,9 @@ html {
 }
 
 #contents_section #items .item_content .item_list .item_detail {
-    font-size: 10px;
     padding-top: 15px;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
 }
 
 
