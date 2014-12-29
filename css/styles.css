@@ -1,6 +1,6 @@
-@import url(http://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
 /*font-family: 'Oswald', sans-serif;*/
-@import url(http://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Lato);
 /*font-family: 'Lato', sans-serif;*/
 
 /* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
@@ -12,7 +12,8 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
   clear: both;
 }
 
-body {
+html {
+    font-family: 'Oswald', sans-serif;
     background-image: url('/images/bg.jpg');
 }
     /*HEADER*/
@@ -91,7 +92,7 @@ body {
 #header #nav_bar #nav_items li {
     display: inline-block;
     margin-right: 30px;
-    font-family: 'Oswald', sans-serif;
+    /*font-family: 'Oswald', sans-serif;*/
     font-size: 14px;
 }
 
@@ -125,7 +126,6 @@ body {
 /*SECTION*/
 
 #contents_section {
-    /*background-image: url('/images/bg.jpg');*/
     margin-top: 0px;
     padding-top: 10px;
     padding-bottom: 50px;
@@ -160,7 +160,6 @@ body {
 
 #contents_section #items .item_content .item_list {
     /*background-color: purple;*/
-    font-family: 'Lato', sans-serif;
     padding-left: 5px;
     display: block;
     float: right;
@@ -280,6 +279,7 @@ body {
     footer {
         display: none;
     }
+
 }
 
 /* TABLET */
@@ -288,7 +288,7 @@ body {
     /*HEADER*/
 
     #header #header_bar {
-        border: 1px solid blue;
+        /*border: 1px solid blue;*/
         background-image: url("/images/header_bg.svg");
         background-repeat: no-repeat;
         background-position: center;
@@ -306,6 +306,10 @@ body {
         max-width: 95%;
     }
     
+    footer {
+        display: none;
+    }
+
     footer {
         display: none;
     }
