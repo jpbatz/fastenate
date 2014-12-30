@@ -46,12 +46,6 @@ body {
     line-height: 25px;
 }
 
-#header #header_bar #plus_button:hover {
-    background-color: #F1592A;
-    color: white;
-}
-
-
 #header #header_bar #plus_button a:link {
     /*color: #FF0000; */
     text-decoration: none;
@@ -64,10 +58,6 @@ body {
 
 #header #header_bar #plus_button a:visited {
     /*color: #FF0000; */
-    text-decoration: none;
-}
-
-#header #header_bar #plus_button a:hover {
     text-decoration: none;
 }
 
@@ -121,11 +111,6 @@ body {
     text-decoration: none;
 }
 
-#header #nav_bar #nav_items li a:hover {
-    text-decoration: none;
-    color: #F1592A;
-}
-
 
 /*SECTION*/
 
@@ -152,9 +137,6 @@ body {
     margin: 10px 0px;
 }
 
-#contents_section #items .item_content:hover {
-    border: 4px solid orange;
-}
 
 #contents_section #items .item_content .item_image {
     /*background-color: pink;*/
@@ -183,11 +165,6 @@ body {
 #contents_section #items .item_content .item_list .item_heading {
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
-}
-
-/*this needs to be in the hover for the item content*/
-#contents_section #items .item_content .item_list .item_heading:hover {
-    color: #B94326;
 }
 
 #contents_section #items .item_content .item_list .item_status {
@@ -355,11 +332,32 @@ body {
     }
 
 
+    #header #header_bar #plus_button:hover {
+        background-color: #F1592A;
+        color: white;
+    }
+    
+    #header #header_bar #plus_button a:hover {
+        text-decoration: none;
+    }
+
     /*NAVIGATION*/
+
+    #header #nav_bar #nav_items li a:hover {
+        text-decoration: none;
+        color: #F1592A;
+    }
 
 
     /*SECTION*/
 
+    #contents_section #items .item_content:hover {
+        border: 4px solid orange;
+    }
+    
+    #contents_section #items .item_content:hover .item_list .item_heading {
+        color: #B94326;
+    }
 
     /*FOOTER*/
 
