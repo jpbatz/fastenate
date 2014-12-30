@@ -375,12 +375,12 @@ html {
     footer #facebook_icon {
         /*background-color: white;*/
         display: inline-block;
-        width: 18px;
+        width: 26px;
         position: relative;
         background-image: url('/images/facebook_grey.svg');
         background-repeat: no-repeat;
         background-position: center;
-        padding: 10px;
+        padding: 16px 3px;
     }
 
     footer #facebook_icon span {
@@ -394,12 +394,12 @@ html {
     footer #instagram_icon {
         /*background-color: yellow;*/
         display: inline-block;
-        width: 18px;
+        width: 26px;
         position: relative;
         background-image: url('/images/instagram_grey.svg');
         background-repeat: no-repeat;
         background-position: center;
-        padding: 10px;
+        padding: 16px 3px;
     }
 
     footer #instagram_icon span {
